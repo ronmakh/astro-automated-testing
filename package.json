@@ -1,0 +1,15 @@
+{
+  "name": "astro-automated-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ronmakh/astro-automated-testing.git",
+  "author": "<yewbenwo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1"
+  },
+  "scripts": {
+    "test": "playwright test"
+  }
+}
+
