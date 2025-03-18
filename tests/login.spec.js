@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 test('Go to Dunia news article', async ({ page }) => {
   // Navigate to the login page
