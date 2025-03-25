@@ -7,6 +7,8 @@ test('Go to Video Live TV', async ({ page }) => {
     // Locate the <a> element with aria-label="VIDEO"
     const videoLink = page.locator('a[aria-label="VIDEO"]');
 
+    await page.waitForSelector('a[aria-label="VIDEO"]', { state: 'visible' });
+
     // Check if the element is visible
     await expect(videoLink).toBeVisible();
 

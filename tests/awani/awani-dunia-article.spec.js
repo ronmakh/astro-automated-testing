@@ -4,8 +4,11 @@ test('Go to Dunia news article', async ({ page }) => {
   // Navigate to the login page
   await page.goto('https://www.astroawani.com');
 
-  // Locate the <a> element with aria-label="DUNIA"
+  // Locate the <a> element with aria-label="VIDEO"
   const duniaLink = page.locator('a[aria-label="DUNIA"]');
+
+  // Wait for the <a> element with aria-label="DUNIA" to be visible
+  await page.waitForSelector('a[aria-label="DUNIA"]', { state: 'visible' });
 
   // Check if the element is visible
   await expect(duniaLink).toBeVisible();
