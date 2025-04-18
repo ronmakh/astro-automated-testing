@@ -7,8 +7,8 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "outDir": "dist",
-    "rootDir": "tests",
+    "rootDir": ".",
     "types": ["node", "playwright"]
   },
-  "include": ["tests"]
+  "include": ["utils", "tests", "scripts"],
 }

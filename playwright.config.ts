@@ -7,4 +7,8 @@ export default defineConfig({
   use: {
     headless: true,
   },
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['junit', { outputFile: 'results/junit-report.xml' }]
+  ],
 });
