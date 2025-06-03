@@ -1,9 +1,10 @@
 import { test, expect, Page } from '@playwright/test';
 import { closeAdIfPresent } from '../common/common';
+import { AWANI_URL } from '../common/locator.constants';
 
 test('Go to Video Live TV', async ({ page }) => {
   // Navigate to the site
-  await page.goto('https://www.astroawani.com');
+  await page.goto(AWANI_URL);
 
   // Locate and click the VIDEO link
   const videoLink = page.locator('a[aria-label="VIDEO"]');

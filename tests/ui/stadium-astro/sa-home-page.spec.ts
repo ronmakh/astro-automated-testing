@@ -1,25 +1,23 @@
 import { test, expect } from '@playwright/test';
 import { closeAdIfPresent } from '../common/common';
-import { ULAGAM_URL } from '../common/locator.constants';
+import {STADIUM_ASTRO_URL} from '../common/locator.constants';
 
 test('Navigation items are present', async ({ page }) => {
-  await page.goto(ULAGAM_URL);
+  await page.goto(STADIUM_ASTRO_URL);
   
   await closeAdIfPresent(page);
 
   const navSelector = 'nav#MAIN_NAVIGATION_HAMBURGER_HEADER';
 
   const expectedTexts = [
-    'HOME',
-    'Contests',
-    'Aattam',
-    'Saravedi',
-    'MY FEED',
-    'VIDEOS',
-    'ULAGAM HEROES',
-    'LIFESTYLE',
-    'தமிழ்',
-    'BOLLYLAH'
+    'Live Scores',
+    'Fantasy',
+    'Video',
+    'Bola Sepak',
+    'Badminton',
+    'STL',
+    'Sukan Lain',
+    'Lagi',
   ];
 
   for (const text of expectedTexts) {

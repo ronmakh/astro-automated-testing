@@ -1,8 +1,9 @@
 import { test, expect, Page } from '@playwright/test';
 import { closeAdIfPresent } from '../common/common';
+import { AWANI_URL } from '../common/locator.constants';
 
 test('Go to Dunia news article', async ({ page }) => {
-  await page.goto('https://www.astroawani.com');
+  await page.goto(AWANI_URL);
 
   await closeAdIfPresent(page);
 
