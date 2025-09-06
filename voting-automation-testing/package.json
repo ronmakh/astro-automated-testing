@@ -1,0 +1,12 @@
+{
+  "name": "voting-automation-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
